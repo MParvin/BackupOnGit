@@ -1,0 +1,27 @@
+### Path to where you want to backup ###
+dataDir="/var/www/html"
+
+### temporary backup will create here
+### Attention this directory will be remove when backup finished
+tempDir="/tmp/backup"
+
+### Use a very secure password for encrypt tar files
+encryptPassphrase="Secure_Password"
+
+### The directory you don't want to backup
+excludeFolder="images"
+
+### HTTPS or SSH URL to git
+gitUrl="git@gitlab.com:mparvin/backup"
+
+# Keep old backups until
+keepOldBackupDays=10
+
+# Day of month to store monthly backup
+monthlyBackupDay=15
+
+# Extension for backup files
+fileExtension=".tar.gz.crypt"
+
+# Remote branch
+remoteBranch=master
